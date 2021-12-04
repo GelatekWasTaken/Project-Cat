@@ -26,6 +26,21 @@ N = Rock totem(When active, makes all water attacks do more damage)(Only one can
 --This is my biggest project yet.--
 --For the people who had it before the leak, cry about it, for the people who didn't have it before the leak, enjoy it!--
 
+if game.Players.LocalPlayer.Character.Reanimate:FindFirstChild("ScriptRunDetector") then
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+     Text = "Project: Cat - A Script Is Running! Reset to change scripts.",
+     Color = Color3.fromRGB(255,255, 255),
+     TextSize = 18,
+ });
+return
+end
+
+local ScriptRunDetector = Instance.new("Part",game.Players.LocalPlayer.Character.Reanimate)
+ScriptRunDetector.Transparency = 1
+ScriptRunDetector.Name = "ScriptRunDetector"
+ScriptRunDetector.CanCollide = false
+ScriptRunDetector.Anchored = true
+
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character.Reanimate
 hum = Character.Humanoid
