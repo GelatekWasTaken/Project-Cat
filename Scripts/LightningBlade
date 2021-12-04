@@ -1,3 +1,6 @@
+if game.Players.LocalPlayer.Character.Reanimate:FindFirstChild("ScriptRunDetector") then
+	return
+end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Project-Cat/main/Misc/LoadLibrary.lua"))()
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character.Reanimate 
@@ -25,6 +28,11 @@ it=Instance.new
 attacktype=1
 vt=Vector3.new
 cf=CFrame.new
+local ScriptRunDetector = Instance.new("Part",Character)
+ScriptRunDetector.Transparency = 0.5
+ScriptRunDetector.Name = "ScriptRunDetector"
+ScriptRunDetector.CanCollide = false
+ScriptRunDetector.Anchored = true
 euler=CFrame.fromEulerAnglesXYZ
 angles=CFrame.Angles
 cloaked=false
