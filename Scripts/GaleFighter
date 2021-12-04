@@ -1,6 +1,6 @@
 if game.Players.LocalPlayer.Character.Reanimate:FindFirstChild("ScriptRunDetector") then
    	game.StarterGui:SetCore("ChatMakeSystemMessage", {
-		Text = "Project: Cat - A Script Is Running! Reset to change scripts.,
+		Text = "Project: Cat - A Script Is Running! Reset to change scripts.",
 		Color = Color3.fromRGB(255,255, 255),
 		TextSize = 18,
 	});
