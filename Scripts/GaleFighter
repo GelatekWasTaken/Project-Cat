@@ -1,3 +1,6 @@
+if game.Players.LocalPlayer.Character.Reanimate:FindFirstChild("ScriptRunDetector") then
+	return
+end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Project-Cat/main/Misc/LoadLibrary.lua"))()
 local FavIDs = {
 	340106355, --Nefl Crystals
@@ -23,6 +26,13 @@ print('Gale Fighter Loaded')
 print('The Fighter that is as fast as wind, a true Fighter')
 local char = plr.Character.Reanimate
 local hum = char.Humanoid
+
+local ScriptRunDetector = Instance.new("Part",game.Players.LocalPlayer.Character.Reanimate)
+ScriptRunDetector.Transparency = 1
+ScriptRunDetector.Name = "ScriptRunDetector"
+ScriptRunDetector.CanCollide = false
+ScriptRunDetector.Anchored = true
+
 local hed = char.Head
 local root = char.HumanoidRootPart
 local rootj = root.RootJoint
