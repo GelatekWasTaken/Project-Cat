@@ -154,38 +154,7 @@ LS.C0 = LS.C0:Lerp(CF(-1+0*math.cos(sine/13),.5+0*math.cos(sine/13),0+0*math.cos
 RH.C0 = RH.C0:Lerp(CF(.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(41+0*math.cos(sine/45)),RAD(0+0*math.cos(sine/13)),RAD(1+0*math.cos(sine/13))),.1)
 LH.C0 = LH.C0:Lerp(CF(-.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(54+0*math.cos(sine/45)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
 reanim['MARTILLO'].Handle.AccessoryWeld.C0 = reanim['MARTILLO'].Handle.AccessoryWeld.C0:Lerp(CF(-1+0*math.cos(sine/13),-2+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(90+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(90+-0*math.cos(sine/13))),.1)
-elseif Root.Velocity.Magnitude < 2 and attackphase1 == false and attackphase2 == false and secretAttack == true  then -- idle
-    NECK.C0 = NECK.C0:Lerp(CF(0+0*math.cos(sine/13),1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    RJ.C0 = RJ.C0:Lerp(CF(0+0*math.cos(sine/13),0+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+273*math.cos(sine/-17)),RAD(0+0*math.cos(sine/13))),.1)
-    RS.C0 = RS.C0:Lerp(CF(1.3+0*math.cos(sine/13),.87+0*math.cos(sine/13),-.5+0*math.cos(sine/13))*ANGLES(RAD(179+0*math.cos(sine/13)),RAD(-2+0*math.cos(sine/13)),RAD(76+0*math.cos(sine/13))),.1)
-    LS.C0 = LS.C0:Lerp(CF(0+0*math.cos(sine/13),0.5+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(83+0*math.cos(sine/13)),RAD(32+0*math.cos(sine/13)),RAD(63+0*math.cos(sine/13))),.1)
-    RH.C0 = RH.C0:Lerp(CF(0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    LH.C0 = LH.C0:Lerp(CF(-0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    reanim['MARTILLO'].Handle.AccessoryWeld.C0 = reanim['MARTILLO'].Handle.AccessoryWeld.C0:Lerp(CF(0+0*math.cos(sine/13),-4+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(90+0*math.cos(sine/13)),RAD(92+0*math.cos(sine/13)),RAD(81+-0*math.cos(sine/13))),.1)
-elseif Root.Velocity.y > 1 and attackphase1 == false and attackphase2 == false and secretAttack == true then -- jump
-    NECK.C0 = NECK.C0:Lerp(CF(0+0*math.cos(sine/13),1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    RJ.C0 = RJ.C0:Lerp(CF(0+0*math.cos(sine/13),0+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+273*math.cos(sine/-17)),RAD(0+0*math.cos(sine/13))),.1)
-    RS.C0 = RS.C0:Lerp(CF(1.3+0*math.cos(sine/13),.87+0*math.cos(sine/13),-.5+0*math.cos(sine/13))*ANGLES(RAD(179+0*math.cos(sine/13)),RAD(-2+0*math.cos(sine/13)),RAD(76+0*math.cos(sine/13))),.1)
-    LS.C0 = LS.C0:Lerp(CF(0+0*math.cos(sine/13),0.5+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(83+0*math.cos(sine/13)),RAD(32+0*math.cos(sine/13)),RAD(63+0*math.cos(sine/13))),.1)
-    RH.C0 = RH.C0:Lerp(CF(0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    LH.C0 = LH.C0:Lerp(CF(-0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    reanim['MARTILLO'].Handle.AccessoryWeld.C0 = reanim['MARTILLO'].Handle.AccessoryWeld.C0:Lerp(CF(0+0*math.cos(sine/13),-4+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(90+0*math.cos(sine/13)),RAD(92+0*math.cos(sine/13)),RAD(81+-0*math.cos(sine/13))),.1)    
-elseif Root.Velocity.y < -1 and attackphase1 == false and attackphase2 == false and secretAttack == true then -- fall
-    NECK.C0 = NECK.C0:Lerp(CF(0+0*math.cos(sine/13),1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    RJ.C0 = RJ.C0:Lerp(CF(0+0*math.cos(sine/13),0+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+273*math.cos(sine/-17)),RAD(0+0*math.cos(sine/13))),.1)
-    RS.C0 = RS.C0:Lerp(CF(1.3+0*math.cos(sine/13),.87+0*math.cos(sine/13),-.5+0*math.cos(sine/13))*ANGLES(RAD(179+0*math.cos(sine/13)),RAD(-2+0*math.cos(sine/13)),RAD(76+0*math.cos(sine/13))),.1)
-    LS.C0 = LS.C0:Lerp(CF(0+0*math.cos(sine/13),0.5+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(83+0*math.cos(sine/13)),RAD(32+0*math.cos(sine/13)),RAD(63+0*math.cos(sine/13))),.1)
-    RH.C0 = RH.C0:Lerp(CF(0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    LH.C0 = LH.C0:Lerp(CF(-0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    reanim['MARTILLO'].Handle.AccessoryWeld.C0 = reanim['MARTILLO'].Handle.AccessoryWeld.C0:Lerp(CF(0+0*math.cos(sine/13),-4+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(90+0*math.cos(sine/13)),RAD(92+0*math.cos(sine/13)),RAD(81+-0*math.cos(sine/13))),.1)        
-elseif Root.Velocity.Magnitude < 20 and attackphase1 == false and attackphase2 == false and secretAttack == true then -- fall
-    NECK.C0 = NECK.C0:Lerp(CF(0+0*math.cos(sine/13),1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    RJ.C0 = RJ.C0:Lerp(CF(0+0*math.cos(sine/13),0+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+273*math.cos(sine/-17)),RAD(0+0*math.cos(sine/13))),.1)
-    RS.C0 = RS.C0:Lerp(CF(1.3+0*math.cos(sine/13),.87+0*math.cos(sine/13),-.5+0*math.cos(sine/13))*ANGLES(RAD(179+0*math.cos(sine/13)),RAD(-2+0*math.cos(sine/13)),RAD(76+0*math.cos(sine/13))),.1)
-    LS.C0 = LS.C0:Lerp(CF(0+0*math.cos(sine/13),0.5+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(83+0*math.cos(sine/13)),RAD(32+0*math.cos(sine/13)),RAD(63+0*math.cos(sine/13))),.1)
-    RH.C0 = RH.C0:Lerp(CF(0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    LH.C0 = LH.C0:Lerp(CF(-0.5+0*math.cos(sine/13),-1+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13)),RAD(0+0*math.cos(sine/13))),.1)
-    reanim['MARTILLO'].Handle.AccessoryWeld.C0 = reanim['MARTILLO'].Handle.AccessoryWeld.C0:Lerp(CF(0+0*math.cos(sine/13),-4+0*math.cos(sine/13),0+0*math.cos(sine/13))*ANGLES(RAD(90+0*math.cos(sine/13)),RAD(92+0*math.cos(sine/13)),RAD(81+-0*math.cos(sine/13))),.1)        
+cos(sine/13)),RAD(92+0*math.cos(sine/13)),RAD(81+-0*math.cos(sine/13))),.1)        
 
 
 elseif Root.Velocity.y > 1 and attackphase1 == true and attackphase2 == false and secretAttack == false then
