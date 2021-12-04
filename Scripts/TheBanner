@@ -52,8 +52,6 @@ reanim['MARTILLO'].Handle.AccessoryWeld.C0 = reanim['MARTILLO'].Handle.Accessory
 secretAttack = false
 cooldown = false
 
-local hrp = pplla.Character.HumanoidRootPart
-
 
 local T = reanim.Torso
 local Sound = Instance.new("Sound", T)
