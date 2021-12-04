@@ -26,6 +26,7 @@ local attackphase2 = false
 local pplla = game.Players.LocalPlayer
 Mouse = pplla:GetMouse()
 reanim = game.Players.LocalPlayer.Character.Reanimate
+reanim.Animate.Disabled = true
 RJ = reanim.HumanoidRootPart.RootJoint
 RS = reanim.Torso['Right Shoulder']
 LS = reanim.Torso['Left Shoulder']
