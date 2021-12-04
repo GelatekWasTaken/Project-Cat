@@ -1,6 +1,12 @@
 if game.Players.LocalPlayer.Character.Reanimate:FindFirstChild("ScriptRunDetector") then
-	return
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+     Text = "Project: Cat - A Script Is Running! Reset to change scripts.",
+     Color = Color3.fromRGB(255,255, 255),
+     TextSize = 18,
+ });
+return
 end
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Project-Cat/main/Misc/LoadLibrary.lua"))()
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character.Reanimate 
