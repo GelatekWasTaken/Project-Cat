@@ -13,8 +13,12 @@ ScriptRunDetector.Name = "ScriptRunDetector"
 ScriptRunDetector.CanCollide = false
 ScriptRunDetector.Anchored = true
 
-if game.Players.LocalPlayer.Character:FindFirstChild("MARTILLO") then
+if game.Players.LocalPlayer.Character:FindFirstChild("MARTILLO").Handle:FindFirstChild("AccessoryWeld") then
 game.Players.LocalPlayer.Character["MARTILLO"].Handle:FindFirstChild("AccessoryWeld"):Destroy()
+end
+
+if game.Players.LocalPlayer.Character:FindFirstChild("MARTILLO") then
+
 else
    	game.StarterGui:SetCore("ChatMakeSystemMessage", {
 		Text = "Project: Cat - You are missing hat! [MARTILLO]",
