@@ -13,7 +13,16 @@ ScriptRunDetector.Name = "ScriptRunDetector"
 ScriptRunDetector.CanCollide = false
 ScriptRunDetector.Anchored = true
 
+if game.Players.LocalPlayer.Character:FindFirstChild("MARTILLO") then
 game.Players.LocalPlayer.Character["MARTILLO"].Handle:FindFirstChild("AccessoryWeld"):Destroy()
+else
+   	game.StarterGui:SetCore("ChatMakeSystemMessage", {
+		Text = "Project: Cat - You are missing hat! [MARTILLO]",
+		Color = Color3.fromRGB(255,255, 255),
+		TextSize = 18,
+	});
+end
+
 
 IT = Instance.new
 CF = CFrame.new
