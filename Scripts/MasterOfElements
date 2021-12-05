@@ -114,6 +114,60 @@ randompitch = #pitchtable
 colors = #colortable
 colors2 = #colortable2
 
+if _G.BotReanimated == true then
+    local HatName = "Torso" 
+    local Char = game:GetService("Players").LocalPlayer.Character or game:GetService("Players").LocalPlayer.CharacterAdded:wait()
+    HatName = Char:FindFirstChild(HatName)
+    
+    wait(0.2)
+        local bp = Instance.new("BodyPosition",HatName)
+        bp.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+        bp.P = 10000
+        bp.D = 125
+        bp.Position = game.Players.LocalPlayer:GetMouse().Hit.p     
+        local bt = Instance.new("BodyThrust",HatName)
+        bt.Force = Vector3.new(3000,3000,3000)
+        bt.Location = Vector3.new(10,5,-10)
+        local hatpos = game.Players.LocalPlayer:GetMouse().Hit.p
+        while true do
+            for _=1,2 do
+                game:GetService("RunService").RenderStepped:wait()
+            end
+            if not HatName or HatName.Parent ~= workspace then break end
+            HatName.CanCollide = false
+        end
+    local mouse = game.Players.LocalPlayer:GetMouse()
+    lolyes = false
+    mouse.Button1Down:Connect(function()
+        lolyes = true
+    end)
+    
+    mouse.Button1Up:Connect(function()
+        lolyes = false
+    end)
+    local askl = game.Players.LocalPlayer.Character:FindFirstChild("Reanimate")
+    local askl2 = askl:FindFirstChild("Torso")
+    spawn(function() while wait() do
+        bp.Position = askl2.Position
+    end end)
+    
+    HatName.Transparency = 0
+    local Outline = Instance.new("SelectionBox", HatName)
+    
+    Outline.LineThickness = 0.08
+    game:GetService("RunService").Heartbeat:Connect(function()
+    local t = 5
+    local hue = tick() % t / t
+    Outline.Color3 = Color3.fromHSV(hue, 1, 1)
+    end)
+    Outline.Adornee = HatName
+    
+    Char["Right Arm"]:BreakJoints()
+    Char["Right Leg"]:BreakJoints()
+    Char["Left Arm"]:BreakJoints()
+    Char["Left Leg"]:BreakJoints()
+end
+
 screenGui = Instance.new("ScreenGui")
 screenGui.Parent = script.Parent
 
