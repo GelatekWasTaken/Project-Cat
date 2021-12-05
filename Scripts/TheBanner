@@ -21,6 +21,7 @@ else
 		Color = Color3.fromRGB(255,255, 255),
 		TextSize = 18,
 	});
+	return
 end
 
 
