@@ -7,7 +7,7 @@ if game.Players.LocalPlayer.Character.Reanimate:FindFirstChild("ScriptRunDetecto
 return
 end
 
-if game.Players.LocalPlayer.Character:FindFirstChild("Meshes/dragonblade_meshAccessory") then
+if game.Players.LocalPlayer.Character:FindFirstChild("Meshes/dragonblade_meshAccessory").Handle:FindFirstChild("AccessoryWeld") then
 game.Players.LocalPlayer.Character["Meshes/dragonblade_meshAccessory"].Handle:FindFirstChild("AccessoryWeld"):Destroy()
 else
    	game.StarterGui:SetCore("ChatMakeSystemMessage", {
