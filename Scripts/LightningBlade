@@ -9,6 +9,10 @@ end
 
 if game.Players.LocalPlayer.Character:FindFirstChild("Meshes/dragonblade_meshAccessory").Handle:FindFirstChild("AccessoryWeld") then
 game.Players.LocalPlayer.Character["Meshes/dragonblade_meshAccessory"].Handle:FindFirstChild("AccessoryWeld"):Destroy()
+end
+
+if game.Players.LocalPlayer.Character:FindFirstChild("Meshes/dragonblade_meshAccessory") then
+-- ok
 else
    	game.StarterGui:SetCore("ChatMakeSystemMessage", {
 		Text = "Project: Cat - You are missing hat! [Meshes/dragonblade_meshAccessory]",
@@ -17,6 +21,7 @@ else
 	});
 	return
 end
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Project-Cat/main/Misc/LoadLibrary.lua"))()
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character.Reanimate 
