@@ -79,6 +79,27 @@ if _G.BotReanimated == true then
     Char["Left Leg"]:BreakJoints()
 end
 
+if _G.PermamentDeath == true then
+local player = game.Players.LocalPlayer
+local hrp = player.Character:FindFirstChild("HumanoidRootPart")
+local pos = player.Character.Reanimate["Meshes/dragonblade_meshAccessory"].Handle
+hrp.Transparency = 0
+hrp.BrickColor = BrickColor.new("0,255,0")
+if hrp:FindFirstChildOfClass("AlignPosition") then hrp:FindFirstChildOfClass("AlignPosition"):Destroy() end
+if hrp:FindFirstChildOfClass("AlignOrientation") then hrp:FindFirstChildOfClass("AlignOrientation"):Destroy() end
+local BAV = Instance.new("BodyAngularVelocity",hrp)
+BAV.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
+BAV.P = 1000000000000000000000000000
+BAV.AngularVelocity = Vector3.new(2500,2500,2500)
+
+spawn(function()
+while wait() do
+    hrp.Position = pos.Position
+end
+end)
+end
+
+
 Player=game:GetService("Players").LocalPlayer
 Character=Player.Character.Reanimate 
 if workspace:FindFirstChild("Camera") then
